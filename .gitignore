@@ -1,0 +1,29 @@
+# Secrets
+.env
+
+# Data (tracked with DVC, not git)
+data/*.csv
+data/*.parquet
+
+# MLflow artifacts (can be large)
+mlruns/
+
+# Generated at runtime — not source code
+configs/best_model.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+Untitled*.ipynb
+
+# macOS
+.DS_Store
+
+# Anaconda Navigator artifacts
+anaconda_projects/
