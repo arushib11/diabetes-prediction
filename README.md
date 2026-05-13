@@ -142,17 +142,17 @@ Six model configurations were trained and tracked with MLflow. Best model select
 
 | Model | ROC-AUC | F1 | Accuracy |
 |---|---|---|---|
-| **Random Forest** ✓ | **0.8512** | **0.5610** | **0.7616** |
+| **Random Forest v2** ✓ | **0.8598** | **0.4800** | **0.7616** |
+| Random Forest | 0.8512 | 0.5610 | 0.7616 |
 | Logistic Regression | 0.8500 | 0.5432 | 0.7550 |
-| Logistic Regression v2 | — | — | — |
-| Random Forest v2 | — | — | — |
+| Logistic Regression v2 | 0.8469 | 0.4865 | 0.7483 |
 | XGBoost | 0.8246 | 0.5843 | 0.7550 |
-| XGBoost v2 | — | — | — |
+| XGBoost v2 | 0.8156 | 0.5618 | 0.7483 |
 
-**Best model: Random Forest** (200 trees, max depth 8)
-- ROC-AUC: 0.8512
-- F1: 0.5610
-- Precision: 0.7931 · Recall: 0.4340 · Accuracy: 0.7616
+**Best model: Random Forest v2** (100 trees, max depth 4)
+- ROC-AUC: 0.8598
+- F1: 0.4800
+- Precision: 0.8333 · Recall: 0.3396 · Accuracy: 0.7616
 
 **Key finding:** All three algorithms scored within 0.03 ROC-AUC of each other. The dataset is small (752 rows after cleaning) so differences are not statistically significant. High precision but low recall suggests the model is conservative — it misses some true positives but rarely raises a false alarm.
 
