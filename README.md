@@ -186,3 +186,4 @@ Six model configurations were trained and tracked with MLflow. Best model select
 - Add a confidence threshold: if probability is between 40–60%, flag it as uncertain rather than committing to high/low risk
 - Collect more data — 752 rows is very small for a medical dataset; recall of 0.43 means the model misses more than half of true diabetes cases
 - Try feature engineering (e.g. glucose × BMI interaction) which may improve recall without sacrificing precision
+- Build a web UI using **Streamlit or Gradio** to make the app accessible in a browser without needing the terminal
