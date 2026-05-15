@@ -73,6 +73,8 @@ python src/app.py
 
 ## Usage
 
+![Demo](demo.png)
+
 Once the app is running, describe a patient in plain English:
 
 ```
