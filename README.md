@@ -144,7 +144,7 @@ Six model configurations were trained and tracked with MLflow. Best model select
 
 | Model | ROC-AUC | F1 | Accuracy |
 |---|---|---|---|
-| **Random Forest v2** ✓ | **0.8598** | **0.4800** | **0.7616** |
+| **Random Forest v2** ✓ | **0.8598** | **0.4800** | **0.7417** |
 | Random Forest | 0.8512 | 0.5610 | 0.7616 |
 | Logistic Regression | 0.8500 | 0.5432 | 0.7550 |
 | Logistic Regression v2 | 0.8469 | 0.4865 | 0.7483 |
@@ -154,9 +154,9 @@ Six model configurations were trained and tracked with MLflow. Best model select
 **Best model: Random Forest v2** (100 trees, max depth 4)
 - ROC-AUC: 0.8598
 - F1: 0.4800
-- Precision: 0.8333 · Recall: 0.3396 · Accuracy: 0.7616
+- Precision: 0.8182 · Recall: 0.3396 · Accuracy: 0.7417
 
-**Key finding:** All three algorithms scored within 0.03 ROC-AUC of each other. The dataset is small (752 rows after cleaning) so differences are not statistically significant. High precision but low recall suggests the model is conservative — it misses some true positives but rarely raises a false alarm.
+**Key finding:** All three algorithms scored within within 0.05 ROC-AUC of each other. The dataset is small (752 rows after cleaning) so differences are not statistically significant. High precision but low recall suggests the model is conservative — it misses some true positives but rarely raises a false alarm.
 
 ---
 
@@ -186,6 +186,6 @@ Six model configurations were trained and tracked with MLflow. Best model select
 
 **What I would improve with more time:**
 - Add a confidence threshold: if probability is between 40–60%, flag it as uncertain rather than committing to high/low risk
-- Collect more data — 752 rows is very small for a medical dataset; recall of 0.43 means the model misses more than half of true diabetes cases
+- Collect more data — 752 rows is very small for a medical dataset; recall of 0.34 means the model misses about two-thirds of true diabetes cases
 - Try feature engineering (e.g. glucose × BMI interaction) which may improve recall without sacrificing precision
 - Build a web UI using **Streamlit or Gradio** to make the app accessible in a browser without needing the terminal
