@@ -156,7 +156,7 @@ Six model configurations were trained and tracked with MLflow. Best model select
 - F1: 0.4800
 - Precision: 0.8182 · Recall: 0.3396 · Accuracy: 0.7417
 
-**Key finding:** All three algorithms scored within within 0.05 ROC-AUC of each other. The dataset is small (752 rows after cleaning) so differences are not statistically significant. High precision but low recall suggests the model is conservative — it misses some true positives but rarely raises a false alarm.
+**Key finding:** All three algorithms scored within 0.05 ROC-AUC of each other. The dataset is small (752 rows after cleaning) so differences are not statistically significant. High precision but low recall suggests the model is conservative — it misses some true positives but rarely raises a false alarm.
 
 ---
 
